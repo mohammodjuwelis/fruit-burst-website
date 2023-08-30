@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
 
+    <!-- google font lato  -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
     <!-- tailwind css link  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,15 +24,60 @@
           }
         }
     </script>
+
     <!-- css style  -->
     <style>
-
+      .lato-font {
+        font-family: 'Lato', sans-serif;
+      }
     </style>
 </head>
-<body>
+<body class="lato-font">
 
   <!-- heading section start  -->
-  <head class=""></head>
+  <header class="max-w-screen-xl mx-auto px-5  py-5 lg:px-16 lg:py-12">
+    <nav>
+      <div class="navbar flex justify-between  md:bg-[#F85559] lg:bg-[#F85559]  rounded-[600px]">
+        <div class="navbar-start hidden lg:block lg:visible">
+          <ul class="lg:flex space-x-4 text-lg text-white font-medium">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">All Fruits</a></li>
+            <li><a href="#">Home</a></li>
+          </ul>
+        </div>
+        <div class="navbar-center">
+          <div class="hidden md:visible md:block lg:visible lg:block">
+            <a class=" normal-case text-4xl text-white font-bold flex items-center"><img src="./images/logo.png" alt=""> Fruit Burst</a>
+          </div>
+          <div class="block visible md:hidden lg:hidden">
+            <a class=" normal-case text-4xl text-black font-bold flex items-center"><img src="./images/logo.png" alt=""> Fruit Burst</a>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <div class=" relative hidden md:block md:visible lg:block lg:visible ">
+            <input class="px-7 py-4 focus:outline-none rounded-[50px]" type="search" placeholder="Search here">
+            <div class="absolute right-4 top-[16px]">
+              <img src="./images/search.svg" alt="">
+            </div>
+          </div>
+
+          <!-- dropdown start  -->
+          <div class="dropdown md:hidden lg:hidden">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <img src="./images/bar.svg" alt="">
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-5 shadow bg-base-100 rounded-box w-80 -translate-x-[125px]">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">All Fruits</a></li>
+              <li><a href="#">Home</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <!-- main section start  -->
   <main class="">
@@ -38,7 +86,7 @@
 
   <!-- footer section start  -->
   <footer class="">
-    
+
   </footer>
 
 
